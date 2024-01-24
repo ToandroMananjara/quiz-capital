@@ -90,3 +90,15 @@ h3{
 .container-toggle{
     display: none;
 }
+.message-score{
+    font-size: 30px;
+    margin: 10px;
+}
+.reponse-btn:hover{
+    background: #fff;
+    color: #575366;
+}
+.btn:hover{
+    background: #575366;
+    color: #fff;
+}

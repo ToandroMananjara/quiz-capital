@@ -191,6 +191,18 @@ nextBtn.addEventListener('click', () =>{
             }
         }else if (questionNumber === 11) {
         questionNumber = 1;
+        if( (0 <= score) && (score < 5) ){
+            document.querySelector('.message-score').innerHTML = 'Un peu faible, mais continuer à progresser!'
+            document.querySelector('.message-score').style.color= '#FF595E'
+        }else if((5 <= score) && (score < 8)){
+            document.querySelector('.message-score').innerHTML = 'Bravo,continuer comme ça !'
+            document.querySelector('.message-score').style.color= 'green'
+        }
+        else if((8 <= score) && (score <= 10)){
+            document.querySelector('.message-score').innerHTML = 'Felicitation,c\'est incroyeble!'
+            document.querySelector('.message-score').style.color= 'green'
+        }
+
         styleDisplay(container, containerToggle);   
         }
     isBoolean = true;
@@ -214,3 +226,5 @@ restarts.forEach( restart => {
         randomReponse(quiz[arrayIndex[randomIndex]].reponse);
     });
 });
+
+
