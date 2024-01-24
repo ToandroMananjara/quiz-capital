@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Quiz</title>
+</head>
+<body>
+    <div class="home-page">
+        <h1>Bienvenue sur mon Quizz!</h1>
+        <button class="start">Start</button>
+    </div>
+    <div class="container">
+        <h3>Question n° <span class="question-number"></span></h3>
+        <h2>Quelle est la capitale de  <span id="question"></span> ?</h2> 
+        <div class="reponse-container">
+            <div class="reponse">
+                <button class="reponse-btn"></button>
+                <button class="reponse-btn"></button>
+            </div>
+            <div class="reponse">
+                <button class="reponse-btn"></button>
+                <button class="reponse-btn"></button>
+            </div>
+        </div>
+        <div class="message"></div>
+        <div class="button-container">
+            <button class="restart">Restart</button>
+            <button class="next">Next</button>
+        </div>
+    </div>
+    <div class="container container-toggle">
+        <div class="score-container">Score <br> <span class="score">0</span> <span class="sur-10">/10</span> </div>
+        <button class="restart">Restart</button>
+    </div>
+
+<script src="./assets/js/index.js"></script>
+</body>
+</html>
